@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #f1f1f1;
+      justify-content: flex-start;
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    box-sizing: border-box;
+    flex-basis: 20% !important;
+    padding:10px
+  }
+  .item{
+    background: #fff
+  }
+  @media(max-width: 1080px){
+    .flex-container > div {
+        flex-basis: 25% !important;
+    }
+  }
+  @media(max-width: 720px){
+    .flex-container > div {
+        flex-basis: 33% !important;
+    }
+  }
+  @media(max-width: 480px){
+    .flex-container > div {
+        flex-basis: 50% !important;
+    }
+  }
+  @media(max-width: 320px){
+    .flex-container > div {
+        flex-basis: 100% !important;
+    }
+  }
+  </style>
+  </head>
+  <body>
+  <h1>The flex responsive grid layout</h1>
+
+  <div class="flex-container">
+    <div><div class="item">item - 1</div></div>
+    <div><div class="item">item - 2</div></div>
+    <div><div class="item">item - 3</div></div>
+    <div><div class="item">item - 4</div></div>
+    <div><div class="item">item - 5</div></div>
+    <div><div class="item">item - 6</div></div>
+    <div><div class="item">item - 7</div></div>
+    <div><div class="item">item - 8</div></div>
+    <div><div class="item">item - 9</div></div>
+    <div><div class="item">item - 10</div></div>
+    <div><div class="item">item - 11</div></div>
+    <div><div class="item">item - 12</div></div>
+    <div><div class="item">item - 13</div></div>
+    <div><div class="item">item - 14</div></div>
+  </div>
+  </body>
+</html>
